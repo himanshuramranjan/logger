@@ -1,0 +1,10 @@
+> Other use case of Chain of Resposibility
+
+Use Case	                    Why Chain of Responsibility Works
+
+Logger System	                Multiple handlers based on severity
+ATM Withdrawal System	        Each denomination processes part of the amount
+Servlet Filters / Middleware	Request passed through filter chain
+Expense Approval System	        Escalation of approval responsibility
+Event Handling in UI	        Event bubbling through handler hierarchy
+Spam Filter	                    Each filter checks specific spam criteria
