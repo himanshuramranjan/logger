@@ -2,13 +2,13 @@ package models;
 
 public abstract class LogProcessor {
 
-    public static int INFO = 1;
-    public static int DEBUG = 2;
-    public static int ERROR = 3;
+    public static final int INFO = 1;
+    public static final int DEBUG = 2;
+    public static final int ERROR = 3;
 
     LogProcessor nextLogProcessor;
 
-    public LogProcessor(LogProcessor loggerProcessor) {
+    protected LogProcessor(LogProcessor loggerProcessor) {
         this.nextLogProcessor = loggerProcessor;
     }
 
