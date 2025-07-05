@@ -8,3 +8,7 @@ Servlet Filters / Middleware	Request passed through filter chain
 Expense Approval System	        Escalation of approval responsibility
 Event Handling in UI	        Event bubbling through handler hierarchy
 Spam Filter	                    Each filter checks specific spam criteria
+
+> Can we instantiate the object in any order
+Yes we can but its advisable to Start with least severe (INFO) and escalate up to most severe (ERROR),
+unless you have a specific reason. Otherwise we can have performance issue
